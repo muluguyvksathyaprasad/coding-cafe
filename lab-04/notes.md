@@ -1,22 +1,27 @@
-q1)The --global flag applies the configuration settings (such as your name and email) across all Git repositories for your current operating system user.
+Global Configuration: Using the --global flag sets your credentials system-wide, preventing the need to re-configure them for individual repositories.
 
-If you leave --global out, Git will only apply those configuration settings to the specific repository you are currently working in, saving them inside that local repository's .git/config file instead of your global user settings (~/.gitconfig).
+Hidden Files: Standard directory listings hide dotfiles like .git, which require the ls -a command to display.
 
+Tracked Files: Git identifies three directories for tracking, each containing user-created files.
 
-q2)git,.,..
+Directory State: Untracked folders like .venv/ remain hidden and unaffected, leaving the newly created .gitignore as the sole addition.
 
+Ignoring Files: Committing .gitignore enforces file-exclusion rules, preventing temporary or build artifacts from being shared with collaborators.
 
-q3)on branch master
-nothing to commit,working tree clean
+Staging Area: Staging a file transitions it from "untracked" status in the working directory to "changes to be committed."
 
+Committing Changes: Committing records changes to the main history line, logging a descriptive message alongside the total number of modified files.
 
-q4). venv
+Commit Hashes: Short commit hashes serve as unique, abbreviated identifiers for tracking specific commits.
 
-q5) committed
+Standard Workflow: The core Git workflow follows a four-step cycle: editing files, checking status (git status), staging (git add), and committing (git commit).
 
-q6) head to master
+Repository Landing Page: GitHub automatically renders a root-level README.md file as the primary project landing page.
 
-q7)1 file changed, 14 insertions
+Credential Caching: Secure token caching eliminates the need for repeated manual authentication during remote operations.
 
-q8)baaed43
+File Structure View: The remote repository view organizes primary project assets, including directories, configuration files, and documentation.
 
+Pushing Commits: Pushing uploads local commits to GitHub without altering your local branch history.
+
+Visibility & Storage: Private GitHub repositories limit cloud access to authorized users, whereas unpushed repositories exist solely on your local machine.
